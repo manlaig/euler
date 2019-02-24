@@ -1,5 +1,13 @@
 #include <iostream>
 
+/*
+Problem set:
+
+If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+Find the sum of all the multiples of 3 or 5 below N.
+*/
+
 /* O(1) algorithm */
 unsigned long long findMultFormula(int n)
 {
@@ -50,10 +58,10 @@ int main()
     std::cin >> t;
     for(int i = 0; i < t; i++)
     {
-        std::cout << "test " << i+1 << ": ";
+        std::cout << "\nN: ";
         std::cin >> n;
 
-        std::cout << findMultFormula(n) << std::endl;
+        std::cout << "Sum: " << findMultFormula(n) << std::endl;
     }
     return 0;
 }
